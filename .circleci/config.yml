@@ -196,9 +196,9 @@ workflows:
   build_all_images:
     jobs:
       - windows_visualstudio_gcp:
-          context: circleci-server-image-builder
+          context: circleci-server-image-builder-1
       - windows_visualstudio_aws:
-          context: circleci-server-image-builder
+          context: circleci-server-image-builder-1
 
   daily:
     jobs:
