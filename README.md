@@ -72,3 +72,6 @@ You can use either AWS or GCP to build your Windows machine image. Choose the on
 * Copies: test results, the choco logs, and the software.md (a list of everything we install and test for the presence of) off of the host.
 * Installs the SSH server and enables the cleanup script that runs on shutdown (check out the aws packer scripts for exactly *how* that works).
 * Creates a Windows AMI.
+
+
+doing this so it can build
