@@ -582,13 +582,13 @@ workflows:
       # - renovate-config-validator
       - build_image_ansible:
           filters: *filters
-          name: windows_2022_visualstudio_aws
+          name: logan_windows_2022_visualstudio_aws
           path: "windows2022/visual-studio-2022"
           build_if_changed: "windows2022"
           source_dirs: "windows2022"
           packer_provider: "amazon-ebs"
           branch: test/install-vs-asadmin
-          context: [CPE_ORBS_AWS, SLACK_NOTIFICATIONS_TEST]
+          context: circleci-server-image-builder
 
   # Uncomment this to run the instance termination cronjob
   # daily:
